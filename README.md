@@ -3,7 +3,7 @@ Primeiro Projeto em grupo utilizando metodologias Resilia do curso de Programado
 
  ## 💡 Início 
 
-A ideia do projeto em grupo "Ajude um microempreendedor!" foi criar um site de negócios fictício para simular uma colaboração a um empreendedor, para tornar seu negócio moderno e ter uma presença maior presença online. 
+A ideia do projeto em grupo "Ajude um microempreendedor!" foi criar um site de negócios fictício para simular uma colaboração a um empreendedor, tornar seu negócio moderno e ter uma maior presença online. 
 
 ## 🫂 Equipe
 
