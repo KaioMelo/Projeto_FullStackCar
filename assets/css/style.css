@@ -59,8 +59,8 @@ header{
 }
 
 .header-link{
-  padding-right: 10px;
-  margin: 10px;
+  padding-right: 5px;
+  margin: 5px;
   color: #0D0D0D;
 }
 
@@ -169,11 +169,17 @@ footer{
   .column--33{
     width: 32%;
   }
+  .logo{
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 1024px){
   .container{
     width: 100%;
+  }
+  .logo{
+    width: 80%;
   }
   .main-nav{
     padding: 0;
