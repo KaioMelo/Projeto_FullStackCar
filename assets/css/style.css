@@ -52,6 +52,37 @@ header{
   background: var(--cor01);
 }
 
+.header-itens{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.header-link{
+  padding-right: 10px;
+  margin: 10px;
+  color: #0D0D0D;
+}
+
+.icon-torso{
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  cursor: default;
+  font-size: 1.5em;
+}
+
+.icon-shopping-cart{
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  cursor: default;
+  font-size: 1.5em;
+}
 
 /*-------- Estilos do menu ------- */
 
@@ -104,17 +135,6 @@ nav{
   font-size: 1.5em;
 }
 
-.cadastro{
-  display: flex;
-  align-items: center;
-  list-style: none;
-}
-
-.cadastro-link{
-  margin: 10px;
-  color: #0D0D0D;
-}
-
 /*-------- Estilos do main ------- */
 
 main{
@@ -130,6 +150,17 @@ footer{
   background-color: #0D0D0D;
   color: white;
   text-align: center;
+  padding: 5px;
+}
+
+
+.rodape-itens{
+  margin-top: 5px;
+}
+
+.rodape-icons{
+  font-size: 1.5em;
+  margin: 5px;
 }
 
 /*-------- Estilos responsivos ------- */
@@ -153,6 +184,7 @@ footer{
   .menu{
     position: static;
     display: flex;
+    margin: auto;
     height: auto;
     width: auto;
     background: var(--cor04);
