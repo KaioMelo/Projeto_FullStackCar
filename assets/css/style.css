@@ -50,6 +50,7 @@ header{
   display: flex;
   justify-content: space-between;
   background: var(--cor01);
+  color: #0D0D0D;
 }
 
 .header-itens{
@@ -61,7 +62,6 @@ header{
 .header-link{
   padding-right: 5px;
   margin: 5px;
-  color: #0D0D0D;
 }
 
 .icon-torso{
@@ -119,8 +119,12 @@ nav{
   background: var(--cor01);
 }
 
+.menu-link-select{
+  background: #F2949C;
+}
+
 .mostrar{
-  height: 192px;
+  height: 240px;
 }
 
 .icon-bars{
