@@ -153,14 +153,16 @@ nav .menu-link a{
 /*-------- Estilos do main ------- */
 
 main{
-  padding-top: -60px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
 
 /*-------- Estilos do footer ------- */
 
 footer{
-  bottom: 0;
-  position: fixed;
+  /* bottom: 0;
+  position: fixed; */
   width: 100%; 
   background-color: #0D0D0D;
   color: white;
