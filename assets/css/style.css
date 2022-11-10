@@ -60,6 +60,12 @@ header .header-link a{
   color: #fff;
 }
 
+
+.header-pesquisa{
+  display: flex;
+  align-items: center;
+}
+
 .header-itens{
   display: flex;
   align-items: center;
