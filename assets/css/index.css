@@ -39,3 +39,9 @@
 .itens-flex{
   padding-top: 10px;
 }
+
+.img-itens{
+  margin: auto;
+  width: 220px;
+  height: 220px;
+}
