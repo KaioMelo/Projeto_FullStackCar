@@ -53,7 +53,7 @@ header{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background: var(--cor01);
+  background-image: linear-gradient(to left, var(--cor01), var(--cor04));
 }
 
 header .header-link a{
