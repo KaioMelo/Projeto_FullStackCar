@@ -7,7 +7,7 @@
   <meta name="viewport"
     content="width=device-width, user-scalable=yes, initial-scale=1.0, max imum-scale=3.0, minimun-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/contatos.css">
+  <link rel="stylesheet" href="./assets/css/contatos.css">
   <link href="https://file.myfontastic.com/2hoY8rpepzyw2QjKhVi4Ea/icons.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <title>Contatos</title>
@@ -37,10 +37,10 @@
       </ul>
     </div>
   </nav>
+<div class="img">
   <main class="main">
     <section class="">
       <div class="container container-flex">
-
       </div>
     </section>
 
@@ -48,35 +48,45 @@
       <h1> Contatos</h1>
       <form>
           <div>
-            <input type="text" placeholder="Digite seu nome" class="inputs">
+            <input type="text" placeholder="Digite seu Nome" class="inputs">
             <span class=" span-required">Nome deve ter no mínimo 3 caracteres.</span>
           </div>
           <div>
-            <input type="text" placeholder="Digite seu email" class="inputs">
+            <input type="text" placeholder="Digite seu Email" class="inputs">
             <span class=" span-required">Digite um email valido.</span>
           </div>
           <div>
-            <input type="text" placeholder="Digite seu telefone" class="inputs">
+            <input type="text" placeholder="Digite seu Telefone" class="inputs">
             <span class=" span-required">Digite um número de telefone valido.</span>
           </div>
           <div>
-           <textarea name="descrição" id="descrição" cols=" 25" rows="10" placeholder="Digite sua mensagem"></textarea>
+            <input type="text" placeholder="Digite seu Estado" class="inputs">
+            <span class=" span-required">Digite um Estado válido.</span>
+          </div>
+          <div>
+            <input type="text" placeholder="Digite sua Cidade" class="inputs">
+            <span class=" span-required">Digite uma Cidade válida.</span>
+          </div>
+         
+           <textarea class="inputs" name="descrição" id="descrição" cols=" 25" rows="10" placeholder="Digite sua mensagem"></textarea>
            
-           <p> Sexo:</p>
+           <p> <h3>Sexo:</h3></p>
            <div class="box-select">
             <div>
               <input type="radio" id="m" value="a" name="sexo">
               <label for="">Masculino</label>
             </div>
+            <div>
               <input type="radio" id="m" value="a" name="sexo">
               <label for="">Feminino</label>
-          </div>
+            </div>
+            <div>
               <input type="radio" id="m" value="a" name="sexo">
               <label for="">Outro</label>
             </div>
-           </div>
-
-           <p> Qual o motivo do contato?</p>
+            </div>
+    
+           <p> <h3>Qual o motivo do contato?</h3></p>
            <div class="box-select">
             <div>
               <input type="checkbox" id="encomendas" value="encomendas" name="assunto">
@@ -94,18 +104,15 @@
               <input type="checkbox" id="outros" value="outros" name="assunto">
               <label for="">Outros</label>
             </div>
-            <div>
-              <input type="checkbox" id="outros" value="outros" name="assunto">
-              <label for="">Outros</label>
-            </div>
            </div>
 
            <button type="submit">Enviar</button>
       </form>
     </div>
-
-
   </main>
+</div>
+
+
   <footer class="main-footer">
     <div class="container container-flex">
       <div class="column column--33">
