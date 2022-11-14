@@ -63,12 +63,12 @@ header{
   background-image: linear-gradient(to top, var(--cor01), var(--cor02));
 }
 
-header .header-link a{
+header .itens-link a{
   color: #fff;
 }
 
-.logo-container{
-  width: auto;
+.logo img{
+  width: 160px;
 }
 
 .header-pesquisa{
@@ -76,15 +76,25 @@ header .header-link a{
   align-items: center;
 }
 
-.header-itens{
+.itens-container{
   display: flex;
   align-items: center;
   list-style: none;
 }
-
-.header-link{
+.itens-container li{
+  display: none;
+}
+.itens{
+  margin: 5px;
+  align-items: center;
+}
+.itens-link{
   padding-right: 5px;
   margin: 5px;
+}
+
+.itens a{
+  color: #0D0D0D;
 }
 
 .icon-torso{ /*icone usuario*/
@@ -94,7 +104,8 @@ header .header-link a{
   line-height: 45px;
   text-align: center;
   cursor: default;
-  font-size: 1.5em;
+  font-size: 1.9em;
+  cursor: pointer;
 }
 
 .icon-shopping-cart{ /*icone carrinho de compras*/
@@ -104,7 +115,8 @@ header .header-link a{
   line-height: 45px;
   text-align: center;
   cursor: default;
-  font-size: 1.5em;
+  font-size: 1.9em;
+  cursor: pointer;
 }
 
 /*-------- Estilos do menu ------- */
@@ -126,7 +138,7 @@ nav .menu-link a{
   top: 60px;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.743);
   padding: 0;
   margin: 0;
   list-style: none;
@@ -205,8 +217,8 @@ footer .rodape-itens a{
   .column--33{
     width: 32%;
   }
-  .logo{
-    width: 50%;
+  .logo img{
+    width: 320px;
   }
 }
 
@@ -214,8 +226,24 @@ footer .rodape-itens a{
   .container{
     width: 100%;
   }
-  .logo{
-    width: 80%;
+  .logo img{
+    width: 380;
+  }
+  .itens-container{ /*Configuração de icones e links do cabeçalho*/
+    display: flex;
+    align-items: center;
+    list-style: none;
+    overflow: hidden;
+  }
+  .itens-container li{
+    display: block;
+  }
+  .itens{
+    display: flex;
+  }
+  .itens-link{
+    padding-right: 5px;
+    margin: 5px;
   }
   .main-nav{
     padding: 0;
