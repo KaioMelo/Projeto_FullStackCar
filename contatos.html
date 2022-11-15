@@ -11,6 +11,7 @@
   <link href="https://file.myfontastic.com/2hoY8rpepzyw2QjKhVi4Ea/icons.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <title>Contatos</title>
+  <script src="../02.Projeto-Grupo-FullStackCar/assets/js/contatos.js"></script>
 </head>
 
 <body>
@@ -41,37 +42,40 @@
       </ul>
     </div>
   </nav>
-<div class="img">
-  <main class="main">
-    
-    <div class="content">
-      <h1> Contatos</h1>
-      <form>
-          <div>
-            <input type="text" placeholder="Digite seu Nome" class="inputs">
+  <div class="img">
+    <main class="main">
+
+      <div class="content">
+        <h1> Contatos</h1>
+        <form id="form">
+          <div> 
+            <input type="text" placeholder="Digite seu Nome" class="inputs required">
             <span class=" span-required">Nome deve ter no mínimo 3 caracteres.</span>
           </div>
           <div>
-            <input type="text" placeholder="Digite seu Email" class="inputs">
+            <input type="text" placeholder="Digite seu Email" class="inputs required">
             <span class=" span-required">Digite um email valido.</span>
           </div>
           <div>
-            <input type="text" placeholder="Digite seu Telefone" class="inputs">
+            <input type="text" placeholder="Digite seu Telefone" class="inputs required">
             <span class=" span-required">Digite um número de telefone valido.</span>
           </div>
           <div>
-            <input type="text" placeholder="Digite seu Estado" class="inputs">
+            <input type="text" placeholder="Digite seu Estado" class="inputs required">
             <span class=" span-required">Digite um Estado válido.</span>
           </div>
           <div>
-            <input type="text" placeholder="Digite sua Cidade" class="inputs">
+            <input type="text" placeholder="Digite sua Cidade" class="inputs required">
             <span class=" span-required">Digite uma Cidade válida.</span>
           </div>
-         
-           <textarea class="inputs" name="descrição" id="descrição" cols=" 25" rows="10" placeholder="Digite sua mensagem"></textarea>
-           
-           <p> <h3>Sexo:</h3></p>
-           <div class="box-select">
+
+          <textarea class="inputs" name="descrição" id="descrição" cols=" 25" rows="10"
+            placeholder="Digite sua mensagem"></textarea>
+
+          <p>
+          <h3>Sexo:</h3>
+          </p>
+          <div class="box-select">
             <div>
               <input type="radio" id="m" value="a" name="sexo">
               <label for="">Masculino</label>
@@ -84,10 +88,12 @@
               <input type="radio" id="m" value="a" name="sexo">
               <label for="">Outro</label>
             </div>
-            </div>
-    
-           <p> <h3>Qual o motivo do contato?</h3></p>
-           <div class="box-select">
+          </div>
+
+          <p>
+          <h3>Qual o motivo do contato?</h3>
+          </p>
+          <div class="box-select">
             <div>
               <input type="checkbox" id="encomendas" value="encomendas" name="assunto">
               <label for="">Encomendas</label>
@@ -104,21 +110,21 @@
               <input type="checkbox" id="outros" value="outros" name="assunto">
               <label for="">Outros</label>
             </div>
-           </div>
+          </div>
 
-           <button type="submit">Enviar</button>
-      </form>
-    </div>
-  </main>
-</div>
-
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </main>
+  </div>
 
   <footer class="main-footer">
     <div class="container container-flex">
       <div class="column column--33">
         <h2 class="rodape-itens">Por que nôs visitou?</h2>
         <br>
-        <p class="rodape-itens">Somos uma empresa autorizada e especializada no ramo automotivo em vendas e revendas de peças e com atendimentos
+        <p class="rodape-itens">Somos uma empresa autorizada e especializada no ramo automotivo em vendas e revendas de
+          peças e com atendimentos
           para todas as regiões do Brasil.</p>
       </div>
       <div class="column column--33">
