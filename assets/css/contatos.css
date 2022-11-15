@@ -10,6 +10,8 @@
 }
 
 /*Inserir Comentários*/
+/*Alterar as posições dos box.flex*/
+/*aumentar as letras de dentro das caixas de form*/
 
 .img {
   background-image: url(../img/img-fundos-contatos.jpg);
@@ -78,10 +80,9 @@ h3 {
 
 .box-select {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-weight: bold;
   gap: 1rem;
-
 }
 
 button[type="submit"] {
@@ -114,7 +115,10 @@ button[type="submit"]:hover {
 
 @media screen and (min-width: 1024px) {
   .box-select {
-    flex-direction: column;
     gap: 5px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
   }
 }
