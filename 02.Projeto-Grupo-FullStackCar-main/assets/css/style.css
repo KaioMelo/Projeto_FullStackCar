@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+:root{
+  --cor01: #F21628;
+  --cor02: #F2949C;
+  --cor03: #F21616;
+  --cor04: #D9D9D9;
+  --cor05: #0D0D0D;
+
+  --font-padrao: Arial, sans-serif;
+  --font-roboto: 'Roboto' , sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  position: relative;
+  font-family: var(--font-padrao);
+  font-size: 1.1em;
+}
+
+/*-------- Estilos Base ------- */
+
+img{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--font-roboto);
+}
+
+.container{
+  width: 100%;
+  margin: auto;
+}
+
+.container-flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column{
+  width: 100%;
+}
+
+/*-------- Estilos header ------- */
+
+header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to top, var(--cor01), var(--cor02));
+}
+
+header .header-link a{
+  color: #fff;
+}
+
+.logo-container{
+  width: auto;
+}
+
+.header-pesquisa{
+  display: flex;
+  align-items: center;
+}
+
+.header-itens{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.header-link{
+  padding-right: 5px;
+  margin: 5px;
+}
+
+.icon-torso{ /*icone usuario*/
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  cursor: default;
+  font-size: 1.5em;
+}
+
+.icon-shopping-cart{ /*icone carrinho de compras*/
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  cursor: default;
+  font-size: 1.5em;
+}
+
+/*-------- Estilos do menu ------- */
+
+nav{
+  width: 100%;
+  position: relative;
+  z-index: 2000;
+  padding: 10px;
+  background: var(--cor04);
+}
+
+nav .menu-link a{
+  color: var(--cor03);
+}
+
+.menu{
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  height: 0;
+  overflow: hidden;
+  transition: height .3s linear;
+}
+
+.menu-link{
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.menu-link:hover{
+  background: var(--cor05);
+}
+
+.menu-link-select{
+  background: var(--cor05);
+}
+
+.mostrar{
+  height: 256px;
+}
+
+.icon-bars{
+  display: block;
+  border: 1px solid #0D0D0D;
+  border-radius: 3px;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+/*-------- Estilos do main ------- */
+
+main{
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+/*-------- Estilos do footer ------- */
+
+footer{
+  /* bottom: 0;
+  position: fixed; */
+  width: 100%; 
+  background-color: #0D0D0D;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+footer .rodape-itens a{
+  color: white;
+}
+
+.rodape-itens{
+  margin-top: 5px;
+}
+
+.rodape-icons{
+  font-size: 1.5em;
+  margin: 5px;
+}
+
+/*-------- Estilos responsivos ------- */
+
+@media screen and (min-width: 480px){
+  .column--33{
+    width: 32%;
+  }
+  .logo{
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .container{
+    width: 100%;
+  }
+  .logo{
+    width: 80%;
+  }
+  .main-nav{
+    padding: 0;
+  }
+  .icon-bars{
+    display: none;
+  }
+  .menu{
+    position: static;
+    display: flex;
+    margin: auto;
+    height: auto;
+    width: auto;
+    background: var(--cor04);
+  }
+  .menu-link{
+    padding: 20px;
+  }
+}
