@@ -1,33 +1,43 @@
-@charset "UTF-8";
+.equipe {
+  height: auto;
+  width: 50cm;
+  display: grid;
+  margin: 2cm;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
-:root{
-  --cor01: #F21628;
-  --cor02: #F2949C;
-  --cor03: #F21616;
-  --cor04: #D9D9D9;
-  --cor05: #0D0D0D;
-
-  --font-padrao: Arial, sans-serif;
-  --font-roboto: 'Roboto' , sans-serif;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
+#eliseu {
+  background-color: rgb(166, 10, 10);
+  width: 10cm;
+  height: 10cm;
+
+
 }
 
-body{
-  position: relative;
-  font-family: var(--font-padrao);
-  font-size: 1.1em;
+#joao {
+  background-color: coral;
+  height: 10cm;
+  width: 10cm;
+
 }
 
-.quadro{
-    width: 92%;
-    background-color: #F21616;
+#kaio {
+  background-color: cornflowerblue;
+  height: 10cm;
+  width: 10cm;
 
+}
+
+#menezes {
+  background-color: brown;
+  height: 10cm;
+  width: 10cm;
+  
+}
+
+#gabriel {
+  background-color: darkgreen;
+  height: 10cm;
+  width: 10cm;
 }
