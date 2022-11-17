@@ -1,0 +1,316 @@
+@charset "UTF-8";
+
+:root{
+  --cor01: #F21628;
+  --cor02: #F2949C;
+  --cor03: #F21616;
+  --cor04: #D9D9D9;
+  --cor05: #0D0D0D;
+
+  --font-padrao: Arial, sans-serif;
+}
+
+
+/*---------Estilos do container container-flex-------------*/
+
+.main-quemSomos{
+             
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.quemSomos {
+
+  display: flex;
+  align-items: center;
+  width: 2000px;
+  padding: 10px;
+  border: 5px;
+  background-color: #3f3f3f; /* cor de fundo*/
+  text-align: justify;         /*alinha texto*/
+  box-shadow: 10px 10px  10px rgba(0, 0, 0, 0.389); /* sombreado em volta */
+  position: relative;  /* cpnecta o ".quemSomos::before"*/
+}
+
+.quemSomos::before{
+
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 20px solid transparent;
+  border-top: 20px solid red;
+  border-right: 20px solid red;
+}
+
+.carro{
+
+  margin-right: 30px; /* espaço entre texto e foto */
+  }
+
+.carro img{
+            margin: -10px;
+            width: 1000px;   /* tamanho da imagem*/
+            height: 400px;   /* tamanho da imagem*/
+}
+
+.mensagem h1{
+
+  text-align: center;     /* alinha titulo h1*/
+  margin-bottom: 20px;    /* espaçamento do fundo h1*/
+  font-size: 25px;        /* tamanho da fonte de h1*/
+  position: relative;     /* conecta o .mensagem h1::before*/
+}
+
+.mensagem h1::before{
+
+  content: '';                    /* coloca a linha vermelha em baixo do titulo*/
+  position: absolute;
+  height: 2px;
+  width: 220px;
+  background-color: red;
+  bottom: 3px;
+  border-radius: 100px;
+}
+
+.mensagem p{
+
+  color: white;     /* coloca a texto na cor branca*/
+  font-size: 20px;    /* tamanho do texto*/
+  margin: 100px;
+}
+
+/*-------------------------------------------------------*/
+
+.missoes-valores{
+
+  display: flex;
+  justify-items: center;
+  
+}
+
+.missao-1{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  padding: 19px;
+  border: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 50px;
+  background-color: #3f3f3f;
+  text-align: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
+  position: relative;
+}
+
+.missao-1::before{
+
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 20px solid transparent;
+  border-top: 20px solid red;
+  border-right: 20px solid red;
+}
+
+.missao-foto{
+
+  margin-bottom: 5px;
+}
+
+.missao-foto img{
+
+    width: 150px;
+justify-items: center;
+margin-left: 65px;
+}
+
+.missao h3{
+
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 30px;
+  position: relative;
+}
+
+.missao h3::before{
+  
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 120px;
+  background-color: red;
+  bottom: 4px;
+  border-radius: 100px;
+}
+
+.missao p{
+
+  color: white;
+  font-size: 20px;
+}
+
+.visao-1{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  padding: 19px;
+  border: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 50px;
+  background-color: #3f3f3f;
+  text-align: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
+  position: relative;
+}
+
+.visao-1::before{
+
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 20px solid transparent;
+  border-top: 20px solid red;
+  border-right: 20px solid red;
+}
+
+.visao-foto{
+
+  margin-bottom: 5px;
+}
+
+.visao-foto img{
+
+    width: 150px;
+justify-items: center;
+margin-left: 65px;
+}
+
+.visao h3{
+
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 30px;
+  position: relative;
+}
+
+.visao h3::before{
+  
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 95px;
+  background-color: red;
+  bottom: 4px;
+  border-radius: 100px;
+}
+
+.visao p{
+
+  color: white;
+  font-size: 20px;
+}
+
+.valores-1{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  border: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 50px;
+  background-color: #3f3f3f;
+  text-align: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
+  position: relative;
+}
+
+.valores-1::before{
+
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 20px solid transparent;
+  border-top: 20px solid red;
+  border-right: 20px solid red;
+}
+
+.valores-foto{
+
+  margin-bottom: 5px;
+}
+
+.valores-foto img{
+
+    width: 150px;
+justify-items: center;
+margin-left: 65px;
+}
+
+.valores h3{
+
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 30px;
+  position: relative;
+}
+
+.valores h3::before{
+  
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 145px;
+  background-color: red;
+  bottom: 4px;
+  border-radius: 100px;
+}
+
+.valores p{
+
+  color: white;
+  font-size: 20px;
+}
+/*-----------------------------------------------------------------------------------*/
+
+#empresa{
+
+  background-color: rgb(194, 191, 191);
+  margin: 200px;
+  padding: 5px;
+}
+
+.missao-valores{
+
+  width: 700px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*-------- Estilos responsivos ------- */
+
+@media screen and (min-width: 370px){
+
+  .missoes-valores{
+
+    display: contents; 
+    justify-items: center; 
+    }
+}
+
