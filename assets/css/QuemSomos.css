@@ -10,153 +10,10 @@
   --font-padrao: Arial, sans-serif;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-body{
-  position: relative;
-}
-
-/*-------- Estilos Base ------- */
-
-img{
-  display: block;
-  width: 100%;
-  max-width: 100%;
-}
-
-.container{
-  width: 100%;
-  margin: auto;
-}
-
-.container-flex{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.column{
-  width: 100%;
-}
-
-/*-------- Estilos header ------- */
-
-header{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  background: var(--cor01);
-}
-
-header .header-link a{
-  color: #fff;
-}
-
-.header-itens{
-  display: flex;
-  align-items: center;
-  list-style: none;
-}
-
-.header-link{
-  padding-right: 5px;
-  margin: 5px;
-}
-
-.icon-torso{
-  display: block;
-  width: 40px;
-  height: 40px;
-  line-height: 45px;
-  text-align: center;
-  cursor: default;
-  font-size: 1.5em;
-}
-
-.icon-shopping-cart{
-  display: block;
-  width: 40px;
-  height: 40px;
-  line-height: 45px;
-  text-align: center;
-  cursor: default;
-  font-size: 1.5em;
-}
-
-/*-------- Estilos do menu ------- */
-
-nav{
-  width: 100%;
-  position: relative;
-  z-index: 2000;
-  padding: 10px;
-  background: var(--cor04);
-}
-
-nav .menu-link a{
-  color: var(--cor03);
-}
-
-.menu{
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-  height: 0;
-  overflow: hidden;
-  transition: height .3s linear;
-}
-
-.menu-link{
-  display: block;
-  padding: 15px;
-  text-decoration: none;
-}
-
-.menu-link:hover{
-  background: var(--cor05);
-}
-
-.menu-link-select{
-  background: var(--cor05);
-}
-
-.mostrar{
-  height: 240px;
-}
-
-.icon-bars{
-  display: block;
-  border: 1px solid #0D0D0D;
-  border-radius: 3px;
-  width: 40px;
-  height: 40px;
-  line-height: 45px;
-  text-align: center;
-  cursor: pointer;
-  font-size: 1.5em;
-}
-
-/*-------- Estilos do main ------- */
-
-main{
-  padding-top: -60px;
-}
 
 /*---------Estilos do container container-flex-------------*/
 
-.container-flex{
+.main-quemSomos{
              
   display: flex;
   justify-content: center;
@@ -445,26 +302,6 @@ margin-left: 65px;
   margin-right: auto;
 }
 
-/*-------- Estilos do footer ------- */
-
-footer{
-  bottom: 0;
-  width: 100%; 
-  background-color: #0D0D0D;
-  color: white;
-  text-align: center;
-  padding: 5px;
-}
-
-
-.rodape-itens{
-  margin-top: 5px;
-}
-
-.rodape-icons{
-  font-size: 1.5em;
-  margin: 5px;
-}
 
 /*-------- Estilos responsivos ------- */
 
@@ -475,42 +312,5 @@ footer{
     display: contents; 
     justify-items: center; 
     }
-
-
 }
 
-@media screen and (min-width: 480px){
-  .column--33{
-    width: 32%;
-  }
-  .logo{
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 1024px){
-  .container{
-    width: 100%;
-  }
-  .logo{
-    width: 80%;
-  }
-  .main-nav{
-    padding: 0;
-  }
-  .icon-bars{
-    display: none;
-  }
-  .menu{
-    position: static;
-    display: flex;
-    margin: auto;
-    height: auto;
-    width: auto;
-    background: var(--cor04);
-  }
-  .menu-link{
-    padding: 20px;
-  }
-
-}
