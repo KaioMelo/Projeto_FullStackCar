@@ -49,11 +49,11 @@
         <h1> Contatos</h1>
         <form id="form">
           <div> 
-            <input type="text" placeholder="Digite seu Nome" class="inputs required">
+            <input type="nome" id="nome" placeholder="Digite seu Nome" class="inputs required" oninput="nameValidate()">
             <span class=" span-required">Nome deve ter no mínimo 3 caracteres.</span>
           </div>
           <div>
-            <input type="text" placeholder="Digite seu Email" class="inputs required">
+            <input type="email" id="email" placeholder="Digite seu Email" class="inputs required">
             <span class=" span-required">Digite um email valido.</span>
           </div>
           <div>
@@ -152,5 +152,6 @@
   </footer>
   <script src="assets/js/script.js"></script>
 </body>
+
 
 </html>
