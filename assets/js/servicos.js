@@ -11,14 +11,7 @@ function adicionarAoCarrinho () {
     selectItem.append(img);
     cartItems.append(selectedItem);
     
-
 }*/
-
-
-
-
-
-
 
 /*const contador = document.querySelector('#qtd');
 let valor = contador.value;*/
