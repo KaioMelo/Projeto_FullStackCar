@@ -15,19 +15,18 @@
 
 <body>
   <header class="main-header">
-    <div class="logo-container" href="index.html">
-      <img src="assets/img/logo.png" class="logo" alt="Logo">
+    <div class="logo" href="index.html">
+      <img src="assets/img/logo.png" alt="Logo">
     </div>
-    <!-- <div class="header-pesquisa">
-      <input class="pesquisa-text" type="text" placeholder="Olá, o que deseja encontrar?">
-      <a href=""></a>
-      <span class="icon-magnifying-glass"></span>
-    </div> -->
-    <div class="header-itens">
-      <span class="icon-torso"></span>
-      <li class="header-link"><a href="login.html">Entrar /<br>Cadastrar</a></li>
-      <span class="icon-shopping-cart"></span>
-      <li class="header-link"><a href="">Meu carrinho</a></li>
+    <div class="itens-container">
+      <div class="itens">
+        <a href="login.html"><span class="icon-torso"></span></a>
+        <li class="itens-link"><a href="login.html">Entre ou Cadastre-se</a></li>
+      </div>
+      <div class="itens">
+        <a href="login.html"><span class="icon-shopping-cart"></span></a>
+        <li class="itens-link"><a href="">Meu carrinho</a></li>
+      </div>
     </div>
   </header>
   <nav class="main-nav">
@@ -43,20 +42,32 @@
     </div>
   </nav>
   <main class="main">
-    <div class="banner">
-      <img class="banner-img" src="assets/img/banner.jpeg" alt="banner">
-    </div>
+    <section class="main-banner">
+      <img src="assets/img/bannerCopa.jpeg" alt="Banner da Copa">
+    </section>
     <section class="main-container">
       <h2>KIT DE REVISÃO PARA SEU CARRO</h2>   
       <div class=" main-flex" col>
         <div class="itens-flex column column--33">
-          <img src="assets/img/banner.jpeg" alt="">
+          <img class="img-itens" src="assets/img/itens/caboDeVela.png" alt="">
+          <p>Jogo Cabos De Vela Gm Corsa Celta Classic 1.0 1.4 Flex</p>
+          <h3>GM</h3>
+          <address>$ 78,50</address>
+          <button name="">Adicionar</button>
         </div>
         <div class="itens-flex column column--33">
-          <img src="assets/img/banner.jpeg" alt="">
+          <img class="img-itens" src="assets/img/itens/filtroDeAr.png" alt="">
+          <p>Filtro De Ar Dodge Journey Rt Sxt 3.6 2012 2013 2014 2015 16</p>
+          <h3>WEGA</h3>
+          <address>$ 145,56</address>
+          <button name="">Adicionar</button>
         </div>
         <div class="itens-flex column column--33">
-          <img src="assets/img/banner.jpeg" alt="">
+          <img class="img-itens" src="assets/img/itens/vela.png" alt="">
+          <p>Jogo Vela Ignição Uno1.0 8v Mille Fire Economy Flex 2008</p>
+          <h3>NGK</h3>
+          <address>$ 57,45</address>
+          <button name="">Adicionar</button>
         </div>
       </div>
     </section>
@@ -64,25 +75,57 @@
       <h2>MAIS VENDIDOS</h2>
       <div class=" main-flex" col>
         <div class="itens-flex column column--33">
-          <img src="assets/img/banner.jpeg" alt="">
+          <img class="img-itens" src="assets/img/itens/cameraDeRe.png" alt="">
+          <p>Camera Ré Estacionamento Colorida Prova D'agua Para Dvd Gps</p>
+          <h3>FIRST OPTION</h3>
+          <address>$ 53,99</address>
+          <button name="">Adicionar</button>
         </div>
         <div class="itens-flex column column--33">
-          <img src="assets/img/banner.jpeg" alt="">
+          <img class="img-itens" src="assets/img/itens/CentralMulti.png" alt="">
+          <p>Central Multimídia Mp5 1 Din Bluetooth Usb Espelhamento</p>
+          <h3>VATINE</h3>
+          <address>$ 363,22</address>
+          <button name="">Adicionar</button>
         </div>
         <div class="itens-flex column column--33">
-          <img src="assets/img/banner.jpeg" alt="">
+          <img class="img-itens" src="assets/img/itens/freioDeDisco.png" alt="">
+          <p>Par Disco De Freio Dianteiro Creta 1.6 E 2.0 (2017 - 2020)</p>
+          <h3>FREMAX</h3>
+          <address>$ 630,50</address>
+          <button name="">Adicionar</button>
         </div>
       </div>
     </section>
     <section class="main-container">
       <div class="itens-flex">
-        <img src="assets/img/oferta.jpeg" alt="Ofertas do dia">
+        <img src="assets/img/bannerOfertas.jpeg" alt="Ofertas do dia">
       </div>
       <section class="main-container">
         <h2>MELHORES OFERTAS</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nostrum placeat illo eum dignissimos vitae
-          impedit aspernatur et necessitatibus perferendis, dolorum quam delectus at eveniet tempore. Ea nemo
-          exercitationem modi?</p>
+        <div class=" main-flex" col>
+          <div class="itens-flex column column--33">
+            <img class="img-itens" src="assets/img/itens/kitDuasVias.png" alt="">
+            <p>Alto Falante Bomber Duas Vias 6 Polegadas Tweeter Universal</p>
+            <h3>BOMBER</h3>
+            <address>$ 134,99</address>
+            <button name="">Adicionar</button>
+          </div>
+          <div class="itens-flex column column--33">
+            <img class="img-itens" src="assets/img/itens/littleTrees.png" alt="">
+            <p>3 Little Trees Aromatizantes Cheirinho Carro Casa Ambientes</p>
+            <h3>LITTLE TREES</h3>
+            <address>$ 29,82</address>
+            <button name="">Adicionar</button>
+          </div>
+          <div class="itens-flex column column--33">
+            <img class="img-itens" src="assets/img/itens/pneu.png" alt="">
+            <p>Pneu General Tire Altimax One P 175/65R14 82 T</p>
+            <h3>GENERAL ALTIMAX</h3>
+            <address>$ 345,33</address>
+            <button name="">Adicionar</button>
+          </div>
+        </div>
       </section>
     </section>
   </main>

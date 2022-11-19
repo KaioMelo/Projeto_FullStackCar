@@ -14,12 +14,9 @@
   --font-roboto: 'Roboto' , sans-serif;
 }
 
-/* Estilo do Banner do corpo do conteudo */
+/* Estilo do slide do corpo do conteudo */
 
-#banner{
-  width: 90%;
-  margin: 0 auto;
-}
+
 
 /* Estilo do corpo da página*/
 
@@ -38,4 +35,10 @@
 
 .itens-flex{
   padding-top: 10px;
+}
+
+.img-itens{
+  margin: auto;
+  width: 220px;
+  height: 220px;
 }
