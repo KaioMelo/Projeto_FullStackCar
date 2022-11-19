@@ -68,7 +68,7 @@ header .itens-link a{
 }
 
 .logo img{
-  width: 160px;
+  width: 80px;
 }
 
 .header-pesquisa{
@@ -218,7 +218,7 @@ footer .rodape-itens a{
     width: 32%;
   }
   .logo img{
-    width: 320px;
+    width: 120px;
   }
 }
 
@@ -227,7 +227,7 @@ footer .rodape-itens a{
     width: 100%;
   }
   .logo img{
-    width: 380;
+    width: 220px;
   }
   .itens-container{ /*Configuração de icones e links do cabeçalho*/
     display: flex;
