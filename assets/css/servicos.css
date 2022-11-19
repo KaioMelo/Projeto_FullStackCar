@@ -15,15 +15,9 @@
 
 .area-produtos {
     margin: 50px;
-    display: grid;
-    grid-template-areas:
-        "box1 box2 box3"
-        "box4 box5 box6"
-        "box7 box8 box9";
-    align-items: center;
-    justify-content: space-around;
-    align-content: space-around;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
 }
 
 /* #box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9 {
@@ -43,6 +37,8 @@
 }
 
 .display-produtos {
+    margin-right: 40px;
+    margin-left: 40px;
     width: 225px;
     height: 350px;
     border: solid 1px rgb(222, 222, 222);
