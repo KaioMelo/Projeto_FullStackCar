@@ -20,69 +20,51 @@
     justify-content:center;
 }
 
-.pecas-item {
+/* #box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9 {
+
+} */
+
+.nome-produtos h1 {
     text-align: center;
-    max-width:250px;
-    font-family:'Hepta Slab', Helvetica, Arial;
-    margin:0 auto 50px auto;
+    font-family: var(--font-padrao);
+    font-size: medium;
+
 }
 
-.pecas-item a {
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    text-decoration: none;
-}
-
-.pecas-item--img {
-    width:200px;
-    height:200px;
-    background-color:#EEE;
-    border-radius:5px;
-    box-shadow:0px 10px 50px rgba(0, 0, 0, 0.2);
+.preco-produtos h1 {
+    font-family: var(--font-padrao);
+    font-size:x-large;
 }
 
 .display-produtos {
     margin-right: 40px;
     margin-left: 40px;
-    text-align: center;
-    background-color:rgba(220, 220, 220, 0.5);
     width: 225px;
     height: 350px;
     border: solid 1px rgb(222, 222, 222);
     border-radius: 8px;
     box-shadow: 0 3px 5px -4px;
-    transition: 0.7s;
-    transform: scale(1);
-}
-
-.display-produtos:hover{
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    transition: 0.7s;
-    transform: scale(1.1);
-}
-
-.display-produtos h3{
-    margin-top: 5px;
 }
 
 .add-produtos {
-    display: flex; 
-}
-
-.modelsBig img {
-    height:400px;
-    width:auto;
-}
-
-.btn-adicionar{
     display: flex;
-    justify-content: center;
-    margin-top: 5px;
+    
 }
 
-.botao-adicionar:hover {
-    transition: 0.7s;
-    transform: scale(1.1);
+.qtd-produtos input {
+    width: 20px;
 }
+
+/*
+@media (max-width 408px) {
+    .area-produtos {
+        flex-wrap: wrap;
+    }
+    box1,box2,box3... etc...{
+        display: block
+    }
+}
+
+
+*/
+

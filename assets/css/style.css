@@ -24,7 +24,6 @@ body{
   position: relative;
   font-family: var(--font-padrao);
   font-size: 1.1em;
-  min-width: 100vh;
 }
 
 /*-------- Estilos Base ------- */
@@ -86,13 +85,9 @@ header .itens-link a{
   display: none;
 }
 .itens{
-  display: flex;
   margin: 5px;
-  margin-left: 10px;
   align-items: center;
-  color: white;
 }
-
 .itens-link{
   padding-right: 5px;
   margin: 5px;
