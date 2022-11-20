@@ -9,14 +9,15 @@
     --font-roboto: 'Roboto', sans-serif;
   }
   
-  
 
+/*Adicionando estilo dentro do body*/
 body{
     background-color: #181f27;
     font-family: Arial;
     overflow: auto;
 }
 
+/*Adicionando estilização na section*/
 .area-login{
     display: flex;
     justify-content: center;
@@ -24,12 +25,13 @@ body{
     height: 100vh;
     height: 100%;
 }
+
 h1{
     text-align: center;
     color:white
 }
 
-  
+  /*Estilizando a class login*/
 .login{
     display: flex;
     justify-content: center;
@@ -42,11 +44,15 @@ h1{
     margin-top: 30px;
     margin-block-end: 30px;
 }
+
+/*Estilizando a tag form dentro da class login*/
 .login form{
     display: flex;
     width: 100%;
     flex-direction: column;
 }
+
+/*Estilizando o botão dentro da class login*/
 .login input{
     margin-top: 10px;
     background-color: white;
@@ -56,6 +62,8 @@ h1{
     outline: none;
     border-radius: 10px;
 }
+
+/*Estilizando a imagem da logo dentro da class login*/
 .login img{
     width: 65px;
     height: auto;
