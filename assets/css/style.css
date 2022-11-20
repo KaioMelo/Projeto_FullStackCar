@@ -60,7 +60,7 @@ header{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-image: linear-gradient(to top, var(--cor01), var(--cor02));
+  background-image: linear-gradient(to top, var(--cor05), grey);
 }
 
 header .itens-link a{
@@ -68,7 +68,7 @@ header .itens-link a{
 }
 
 .logo img{
-  width: 160px;
+  width: 80px;
 }
 
 .header-pesquisa{
@@ -94,7 +94,7 @@ header .itens-link a{
 }
 
 .itens a{
-  color: #0D0D0D;
+  color: var(--cor03);
 }
 
 .icon-torso{ /*icone usuario*/
@@ -218,7 +218,7 @@ footer .rodape-itens a{
     width: 32%;
   }
   .logo img{
-    width: 320px;
+    width: 120px;
   }
 }
 
@@ -227,7 +227,7 @@ footer .rodape-itens a{
     width: 100%;
   }
   .logo img{
-    width: 380;
+    width: 200px;
   }
   .itens-container{ /*Configuração de icones e links do cabeçalho*/
     display: flex;

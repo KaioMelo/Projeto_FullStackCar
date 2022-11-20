@@ -27,15 +27,17 @@
   padding-bottom: 20px;
 }
 
+.main-container > h2{
+  text-align: center;
+}
+
 .main-flex{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding-top: 30px;
 }
 
-.itens-flex{
-  padding-top: 10px;
-}
 
 .img-itens{
   margin: auto;

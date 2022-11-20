@@ -8,6 +8,7 @@
     content="width=device-width, user-scalable=yes, initial-scale=1.0, max imum-scale=3.0, minimun-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/servicos.css">
   <link href="https://file.myfontastic.com/2hoY8rpepzyw2QjKhVi4Ea/icons.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <title>Full Stack Car - Peças Automotivas</title>
@@ -43,87 +44,317 @@
   </nav>
   <main class="main">
     <section class="main-banner">
-      <img src="assets/img/banner.jpeg" alt="Banner da Copa">
+      <img src="assets/img/bannerCopa.jpeg" alt="Banner da Copa">
     </section>
     <section class="main-container">
-      <h2>KIT DE REVISÃO PARA SEU CARRO</h2>   
-      <div class=" main-flex" col>
-        <div class="itens-flex column column--33">
-          <img class="img-itens" src="assets/img/itens/caboDeVela.png" alt="">
-          <p>Jogo Cabos De Vela Gm Corsa Celta Classic 1.0 1.4 Flex</p>
-          <h3>GM</h3>
-          <address>$ 78,50</address>
-          <button name="">Adicionar</button>
+      <h2>KIT DE REVISÃO PARA SEU CARRO</h2>
+      <div class="main-flex">
+        <div class="display-produtos column column--33" id="box1">
+          <div class="imagem-produtos">
+            <img src="./assets/img/produto/cabo-de-vela.png" />
+          </div>
+          <div class="nome-produtos">
+            <h3>KIT CABO E VELA</h3>
+          </div>
+          <div class="preco-produtos">
+            <h3>R$63,98</h3>
+          </div>
+          <!--BOTOES-->
+          <div class="add-produtos">
+            <div class="btn-incrementone">
+              <!--ADDFUNCTION-->
+              <button onclick="adicionarUnidade()" id="incrementOne">+</button>
+            </div>
+            <div class="qtd-produtos">
+              <input type="text" value="0" disabled class="qtd">
+            </div>
+            <div class="btn-decrementone">
+              <!--REMOVEFUNCTION-->
+              <button onclick="removerUnidade()" id="decrementOne">-</button>
+            </div>
+            <div class="btn-buy">
+              <!--BUY FUNCTION-->
+              <button>COMPRAR</button>
+            </div>
+          </div>
+          <!--info-->
+          <div class="info">
+            <div class="info-icon">
+              <button>=</button>
+            </div>
+            <div class="info-escondida">
+            </div>
+          </div>
         </div>
-        <div class="itens-flex column column--33">
-          <img class="img-itens" src="assets/img/itens/filtroDeAr.png" alt="">
-          <p>Filtro De Ar Dodge Journey Rt Sxt 3.6 2012 2013 2014 2015 16</p>
-          <h3>WEGA</h3>
-          <address>$ 145,56</address>
-          <button name="">Adicionar</button>
+        <div class="display-produtos column column--33" id="box1">
+          <div class="imagem-produtos">
+            <img src="./assets/img/produto/filtro-de-ar.png" />
+          </div>
+          <div class="nome-produtos">
+            <h3>FILTRO DE AR</h3>
+          </div>
+          <div class="preco-produtos">
+            <h3>R$145,56</h3>
+          </div>
+          <div class="add-produtos">
+            <div class="btn-incrementone">
+              <button onclick="adicionarUnidade()" id="incrementOne">+</button>
+            </div>
+            <div class="qtd-produtos">
+              <input type="text" value="0" disabled class="qtd">
+            </div>
+            <div class="btn-decrementone">
+              <button onclick="removerUnidade()" id="decrementOne">-</button>
+            </div>
+            <div class="btn-buy">
+              <button>COMPRAR</button>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <button>=</button>
+            </div>
+            <div class="info-escondida">
+            </div>
+          </div>
         </div>
-        <div class="itens-flex column column--33">
-          <img class="img-itens" src="assets/img/itens/vela.png" alt="">
-          <p>Jogo Vela Ignição Uno1.0 8v Mille Fire Economy Flex 2008</p>
-          <h3>NGK</h3>
-          <address>$ 57,45</address>
-          <button name="">Adicionar</button>
+        <div class="display-produtos column column--33" id="box1">
+          <div class="imagem-produtos">
+            <img src="./assets/img/produto/vela.png" />
+          </div>
+          <div class="nome-produtos">
+            <h3>VELA DE INGNIÇÃO</h3>
+          </div>
+          <div class="preco-produtos">
+            <h3>R$57,45</h3>
+          </div>
+          <div class="add-produtos">
+            <div class="btn-incrementone">
+              <button onclick="adicionarUnidade()" id="incrementOne">+</button>
+            </div>
+            <div class="qtd-produtos">
+              <input type="text" value="0" disabled class="qtd">
+            </div>
+            <div class="btn-decrementone">
+              <button onclick="removerUnidade()" id="decrementOne">-</button>
+            </div>
+            <div class="btn-buy">
+              <button>COMPRAR</button>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <button>=</button>
+            </div>
+            <div class="info-escondida">
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="main-container">
       <h2>MAIS VENDIDOS</h2>
-      <div class=" main-flex" col>
-        <div class="itens-flex column column--33">
-          <img class="img-itens" src="assets/img/itens/cameraDeRe.png" alt="">
-          <p>Camera Ré Estacionamento Colorida Prova D'agua Para Dvd Gps</p>
-          <h3>FIRST OPTION</h3>
-          <address>$ 53,99</address>
-          <button name="">Adicionar</button>
+      <div class=" main-flex">
+        <div class="display-produtos column column--33" id="box1">
+          <div class="imagem-produtos">
+            <img src="./assets/img/produto/camera-de-re.png" />
+          </div>
+          <div class="nome-produtos">
+            <h3>CAMERA DE RÉ</h3>
+          </div>
+          <div class="preco-produtos">
+            <h3>R$53,99</h3>
+          </div>
+          <div class="add-produtos">
+            <div class="btn-incrementone">
+              <button onclick="adicionarUnidade()" id="incrementOne">+</button>
+            </div>
+            <div class="qtd-produtos">
+              <input type="text" value="0" disabled class="qtd">
+            </div>
+            <div class="btn-decrementone">
+              <button onclick="removerUnidade()" id="decrementOne">-</button>
+            </div>
+            <div class="btn-buy">
+              <button>COMPRAR</button>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <button>=</button>
+            </div>
+            <div class="info-escondida">
+            </div>
+          </div>
         </div>
-        <div class="itens-flex column column--33">
-          <img class="img-itens" src="assets/img/itens/CentralMulti.png" alt="">
-          <p>Central Multimídia Mp5 1 Din Bluetooth Usb Espelhamento</p>
-          <h3>VATINE</h3>
-          <address>$ 363,22</address>
-          <button name="">Adicionar</button>
+        <div class="display-produtos column column--33" id="box1">
+          <div class="imagem-produtos">
+            <img src="./assets/img/produto/vela.png" />
+          </div>
+          <div class="nome-produtos">
+            <h3>CENTRAL MULTIMIDIA</h3>
+          </div>
+          <div class="preco-produtos">
+            <h3>R$363,30</h3>
+          </div>
+          <div class="add-produtos">
+            <div class="btn-incrementone">
+              <button onclick="adicionarUnidade()" id="incrementOne">+</button>
+            </div>
+            <div class="qtd-produtos">
+              <input type="text" value="0" disabled class="qtd">
+            </div>
+            <div class="btn-decrementone">
+              <button onclick="removerUnidade()" id="decrementOne">-</button>
+            </div>
+            <div class="btn-buy">
+              <button>COMPRAR</button>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <button>=</button>
+            </div>
+            <div class="info-escondida">
+            </div>
+          </div>
         </div>
-        <div class="itens-flex column column--33">
-          <img class="img-itens" src="assets/img/itens/freioDeDisco.png" alt="">
-          <p>Par Disco De Freio Dianteiro Creta 1.6 E 2.0 (2017 - 2020)</p>
-          <h3>FREMAX</h3>
-          <address>$ 630,50</address>
-          <button name="">Adicionar</button>
+        <div class="display-produtos column column--33" id="box1">
+          <div class="imagem-produtos">
+            <img src="./assets/img/produto/freio-de-disco.png" />
+          </div>
+          <div class="nome-produtos">
+            <h3>FREIO DE DISCO</h3>
+          </div>
+          <div class="preco-produtos">
+            <h3>R$630,50</h3>
+          </div>
+          <div class="add-produtos">
+            <div class="btn-incrementone">
+              <button onclick="adicionarUnidade()" id="incrementOne">+</button>
+            </div>
+            <div class="qtd-produtos">
+              <input type="text" value="0" disabled class="qtd">
+            </div>
+            <div class="btn-decrementone">
+              <button onclick="removerUnidade()" id="decrementOne">-</button>
+            </div>
+            <div class="btn-buy">
+              <button>COMPRAR</button>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <button>=</button>
+            </div>
+            <div class="info-escondida">
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="main-container">
       <div class="itens-flex">
-        <img src="assets/img/oferta.jpeg" alt="Ofertas do dia">
+        <img src="assets/img/bannerOfertas.jpeg" alt="Ofertas do dia">
       </div>
       <section class="main-container">
         <h2>MELHORES OFERTAS</h2>
-        <div class=" main-flex" col>
-          <div class="itens-flex column column--33">
-            <img class="img-itens" src="assets/img/itens/kitDuasVias.png" alt="">
-            <p>Alto Falante Bomber Duas Vias 6 Polegadas Tweeter Universal</p>
-            <h3>BOMBER</h3>
-            <address>$ 134,99</address>
-            <button name="">Adicionar</button>
+        <div class=" main-flex">
+          <div class="display-produtos column column--33" id="box1">
+            <div class="imagem-produtos">
+              <img src="./assets/img/produto/kit-duas-vias.png" />
+            </div>
+            <div class="nome-produtos">
+              <h3>ALTO FALANTE</h3>
+            </div>
+            <div class="preco-produtos">
+              <h3>R$134,99</h3>
+            </div>
+            <div class="add-produtos">
+              <div class="btn-incrementone">
+                <button onclick="adicionarUnidade()" id="incrementOne">+</button>
+              </div>
+              <div class="qtd-produtos">
+                <input type="text" value="0" disabled class="qtd">
+              </div>
+              <div class="btn-decrementone">
+                <button onclick="removerUnidade()" id="decrementOne">-</button>
+              </div>
+              <div class="btn-buy">
+                <button>COMPRAR</button>
+              </div>
+            </div>
+            <div class="info">
+              <div class="info-icon">
+                <button>=</button>
+              </div>
+              <div class="info-escondida">
+              </div>
+            </div>
           </div>
-          <div class="itens-flex column column--33">
-            <img class="img-itens" src="assets/img/itens/littleTrees.png" alt="">
-            <p>3 Little Trees Aromatizantes Cheirinho Carro Casa Ambientes</p>
-            <h3>LITTLE TREES</h3>
-            <address>$ 29,82</address>
-            <button name="">Adicionar</button>
+          <div class="display-produtos column column--33" id="box1">
+            <div class="imagem-produtos">
+              <img src="./assets/img/produto/little-trees.png" />
+            </div>
+            <div class="nome-produtos">
+              <h3>LITTLE TREES</h3>
+            </div>
+            <div class="preco-produtos">
+              <h3>R$29,88</h3>
+            </div>
+            <div class="add-produtos">
+              <div class="btn-incrementone">
+                <button onclick="adicionarUnidade()" id="incrementOne">+</button>
+              </div>
+              <div class="qtd-produtos">
+                <input type="text" value="0" disabled class="qtd">
+              </div>
+              <div class="btn-decrementone">
+                <button onclick="removerUnidade()" id="decrementOne">-</button>
+              </div>
+              <div class="btn-buy">
+                <button>COMPRAR</button>
+              </div>
+            </div>
+            <div class="info">
+              <div class="info-icon">
+                <button>=</button>
+              </div>
+              <div class="info-escondida">
+              </div>
+            </div>
           </div>
-          <div class="itens-flex column column--33">
-            <img class="img-itens" src="assets/img/itens/pneu.png" alt="">
-            <p>Pneu General Tire Altimax One P 175/65R14 82 T</p>
-            <h3>GENERAL ALTIMAX</h3>
-            <address>$ 345,33</address>
-            <button name="">Adicionar</button>
+          <div class="display-produtos column column--33" id="box1">
+            <div class="imagem-produtos">
+              <img src="./assets/img/produto/pneu.png" />
+            </div>
+            <div class="nome-produtos">
+              <h3>PNEU</h3>
+            </div>
+            <div class="preco-produtos">
+              <h3>R$345,99</h3>
+            </div>
+            <div class="add-produtos">
+              <div class="btn-incrementone">
+                <button onclick="adicionarUnidade()" id="incrementOne">+</button>
+              </div>
+              <div class="qtd-produtos">
+                <input type="text" value="0" disabled class="qtd">
+              </div>
+              <div class="btn-decrementone">
+                <button onclick="removerUnidade()" id="decrementOne">-</button>
+              </div>
+              <div class="btn-buy">
+                <button>COMPRAR</button>
+              </div>
+            </div>
+            <div class="info">
+              <div class="info-icon">
+                <button>=</button>
+              </div>
+              <div class="info-escondida">
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -134,7 +365,8 @@
       <div class="column column--33">
         <h2 class="rodape-itens">Por que nôs visitou?</h2>
         <br>
-        <p class="rodape-itens">Somos uma empresa autorizada e especializada no ramo automotivo em vendas e revendas de peças e com atendimentos
+        <p class="rodape-itens">Somos uma empresa autorizada e especializada no ramo automotivo em vendas e revendas de
+          peças e com atendimentos
           para todas as regiões do Brasil.</p>
       </div>
       <div class="column column--33">
