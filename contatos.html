@@ -42,42 +42,39 @@
       </ul>
     </div>
   </nav>
-  <div class="img">
+  <div class="img"> <!--imagem de fundo-->
     <main class="main">
 
       <div class="content">
         <h1> Contatos</h1>
-        <form id="form">
-          <div> 
-            <input type="text" placeholder="Digite seu Nome" class="inputs required">
-            <span class=" span-required">Nome deve ter no mínimo 3 caracteres.</span>
+        <form id="form">  <!--id *form* para escrever um formuçário-->
+          <div>           <!--foi utilizado um *input* em cada campo com um *placeholder* para ficar aperencendo a  instrução embaixo-->
+            <input type="nome" id="nome" placeholder="Digite seu Nome" class="inputs">
           </div>
           <div>
-            <input type="text" placeholder="Digite seu Email" class="inputs required">
-            <span class=" span-required">Digite um email valido.</span>
+            <input type="email" id="email" placeholder="Digite seu Email" class="inputs">
           </div>
           <div>
-            <input type="text" placeholder="Digite seu Telefone" class="inputs required">
-            <span class=" span-required">Digite um número de telefone valido.</span>
+            <!-- permitindo apenas numeros -->
+          <input type="number"  id="number"placeholder="Digite seu Telefone" 
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="inputs"></input>
           </div>
           <div>
-            <input type="text" placeholder="Digite seu Estado" class="inputs required">
-            <span class=" span-required">Digite um Estado válido.</span>
+            <input type="text" placeholder="Digite seu Estado" class="inputs">
           </div>
           <div>
-            <input type="text" placeholder="Digite sua Cidade" class="inputs required">
-            <span class=" span-required">Digite uma Cidade válida.</span>
+            <input type="text" placeholder="Digite sua Cidade" class="inputs">
           </div>
-
+          <!--Adicionando caixa de texto-->
           <textarea class="inputs" name="descrição" id="descrição" cols=" 25" rows="10"
             placeholder="Digite sua mensagem"></textarea>
 
           <p>
           <h3>Sexo:</h3>
           </p>
-          <div class="box-select">
+          <div class="box-select"> <!--Inserindo uma lista de seleção de itens-->
             <div>
-              <input type="radio" id="m" value="a" name="sexo">
+              <input type="radio" id="m" value="a" name="sexo"> <!--Travando para não escolher duas opções ao mesmo tempo-->
               <label for="">Masculino</label>
             </div>
             <div>
@@ -91,11 +88,11 @@
           </div>
 
           <p>
-          <h3>Qual o motivo do contato?</h3>
+          <h3>Qual o motivo do contato?</h3> 
           </p>
-          <div class="box-select">
+          <div class="box-select">    <!--Inserindo uma lista de seleção de itens-->
             <div>
-              <input type="checkbox" id="encomendas" value="encomendas" name="assunto">
+              <input type="checkbox" id="encomendas" value="encomendas" name="assunto"> <!--Permitindo a opção de caixa de seleção para escolher duas opções ou mais opções ao mesmo tempo-->   
               <label for="">Encomendas</label>
             </div>
             <div>
@@ -112,7 +109,7 @@
             </div>
           </div>
 
-          <button type="submit">Enviar</button>
+          <button type="submit">Enviar</button>  <!--Criação do botão de envio-->
         </form>
       </div>
     </main>
@@ -152,5 +149,6 @@
   </footer>
   <script src="assets/js/script.js"></script>
 </body>
+
 
 </html>
