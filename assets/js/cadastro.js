@@ -6,4 +6,3 @@ if (email.value == '@' ) {
 }else{
     console('erro')
 }
-
