@@ -14,10 +14,6 @@
   --font-roboto: 'Roboto' , sans-serif;
 }
 
-/* Estilo do slide do corpo do conteudo */
-
-
-
 /* Estilo do corpo da página*/
 
 .main-container{
@@ -37,7 +33,6 @@
   flex-wrap: wrap;
   padding-top: 30px;
 }
-
 
 .img-itens{
   margin: auto;
