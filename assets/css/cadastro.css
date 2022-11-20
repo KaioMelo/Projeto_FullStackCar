@@ -40,7 +40,7 @@ h1{
     background-color: #181920;
     border-radius: 10px;
     width: 355px;
-    height: 320px;
+    height: 350px;
     padding: 35px;
     margin-top: 30px;
     margin-block-end: 30px;
@@ -69,6 +69,8 @@ h1{
 .login img{
     width: 65px;
     height: auto;
+    margin-left: -50px;
+    margin-top: 10px;
 }
 .input::placeholder{
     color: black;
