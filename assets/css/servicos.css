@@ -20,17 +20,26 @@
     justify-content:center;
 }
 
-
-.nome-produtos h1 {
+.pecas-item {
     text-align: center;
-    font-family: var(--font-padrao);
-    font-size: medium;
-
+    max-width:250px;
+    font-family:'Hepta Slab', Helvetica, Arial;
+    margin:0 auto 50px auto;
 }
 
-.preco-produtos h1 {
-    font-family: var(--font-padrao);
-    font-size:x-large;
+.pecas-item a {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    text-decoration: none;
+}
+
+.pecas-item--img {
+    width:200px;
+    height:200px;
+    background-color:#EEE;
+    border-radius:5px;
+    box-shadow:0px 10px 50px rgba(0, 0, 0, 0.2);
 }
 
 .display-produtos {
@@ -62,8 +71,9 @@
     display: flex; 
 }
 
-.qtd-produtos input {
-    width: 20px;
+.modelsBig img {
+    height:400px;
+    width:auto;
 }
 
 .btn-adicionar{
