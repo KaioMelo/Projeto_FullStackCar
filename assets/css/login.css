@@ -69,7 +69,6 @@ h1{
     height: auto;
 }
 
-/*Estilizando o botão*/
 .input::placeholder{
     color: black;
     font-size: 14px;
