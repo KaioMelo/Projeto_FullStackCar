@@ -211,6 +211,11 @@ main {
   height: 100%;
 }
 
+main > h2{
+  text-align: center;
+  padding-top: 30px;
+}
+
 /*-------- Estilos do footer ------- */
 
 footer {

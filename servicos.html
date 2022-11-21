@@ -23,7 +23,7 @@
         <a href="login.html"><span class="icon-torso"></span></a>
         <li class="itens-link"><a href="login.html">Entre ou Cadastre-se</a></li>
       </div>
-      <div class="itens cart-icon"  onclick="cartIcon()">
+      <div class="itens cart-icon" onclick="cartIcon()">
         <span>0</span>
         <a href="">
           <span class="icon-shopping-cart"></span>
@@ -60,12 +60,13 @@
               <input type="hidden" value="63,98" />
             </div>
             <div class="btn-buy">
-              <button onclick="acao1()" class="add-cart cart1"><span class="icon-plus"></span></button>
+              <button onclick="acao1()" class="add-info"><span class="icon-plus"></span></button>
+              <a href="contatos.html"><button class="add-cart"><span class="icon-cart-plus"></span></button></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal1">
+      <div class="modal" id="modal1">
         <div class="fechar" onclick="fechar1()">X</div>
         <h1>Cabo de Vela, Vela de Ignição e Kit Cabo de Vela</h1>
         <p>Seu veículo está engasgando durante a partida, ou está percebendo que o consumo de combustível está muito
@@ -76,7 +77,6 @@
           para os mais diversos veículos, tudo de excelente qualidade, além de garantia, preço justo e o melhor,
           entrega
           rápida e pagamento em até 10x Sem Juros!</p>
-        <a href="contatos.html" class="comprar">COMPRAR</a>
       </div>
       <div class="main-flex">
         <div class="display-produtos column column--33" id="item5">
@@ -92,12 +92,13 @@
               <input type="hidden" value="159,98" />
             </div>
             <div class="btn-buy">
-              <button onclick="acao2()" class="add-cart cart2"><span class="icon-plus"></span></button>
+              <button onclick="acao2()" class="add-cart"><span class="icon-plus"></span></button>
+              <a href="contatos.html"><button class="add-cart"><span class="icon-cart-plus"></span></button></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal2">
+      <div class="modal" id="modal2">
         <div class="fechar" onclick="fechar2()">X</div>
         <h1>CÂMERA DE RÉ</h1>
         <p>O que é a câmera de ré? A câmera de ré é um sistema de estacionamento no qual é instalada uma câmera na
@@ -107,24 +108,27 @@
           parar o seu automóvel.</p>
         <a href="contatos.html" class="comprar">COMPRAR</a>
       </div>
-      <div class="display-produtos column column--33" id="item7">
-        <div class="imagem-produtos">
-          <img src="./assets/img/produto/central-multi.png" />
-        </div>
-        <div class="content">
-          <div class="nome-produtos">
-            <h1>CENTRAL MULTIMIDIA</h1>
+      <div class="main-flex">
+        <div class="display-produtos column column--33" id="item7">
+          <div class="imagem-produtos">
+            <img src="./assets/img/produto/central-multi.png" />
           </div>
-          <div class="preco-produtos">
-            <h1>R$355,75</h1>
-            <input type="hidden" value="355,75" />
-          </div>
-          <div class="btn-buy">
-            <button onclick="acao3()" class="add-cart cart3"><span class="icon-plus"></span></button>
+          <div class="content">
+            <div class="nome-produtos">
+              <h1>CENTRAL MULTIMIDIA</h1>
+            </div>
+            <div class="preco-produtos">
+              <h1>R$355,75</h1>
+              <input type="hidden" value="355,75" />
+            </div>
+            <div class="btn-buy">
+              <button onclick="acao3()" class="add-cart cart3"><span class="icon-plus"></span></button>
+              <a href="contatos.html"><button class="add-cart"><span class="icon-cart-plus"></span></button></a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="modal3">
+      <div class="modal" id="modal3">
         <div class="fechar" onclick="fechar3()">X</div>
         <h1>CENTRAL MULTIMIDIA</h1>
         <p>O que faz uma central multimídia?
@@ -154,11 +158,12 @@
             <div class="btn-buy">
               <!--ADD CAR-->
               <button onclick="acao4()" class="add-cart cart4"><span class="icon-plus"></span></button>
+              <a href="contatos.html"><button class="add-cart"><span class="icon-cart-plus"></span></button></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal4">
+      <div class="modal" id="modal4">
         <div class="fechar" onclick="fechar4()">X</div>
         <h1>FILTRO DE AR AUTOMOTIVO</h1>
         <p>A principal função dos filtros automotivos é resguardar o motor do veículo. No entanto, como existem diversos
@@ -180,13 +185,13 @@
               <input type="hidden" value="75,98" />
             </div>
             <div class="btn-buy">
-              <!--ADD CAR-->
               <button onclick="acao5()" class="add-cart cart5"><span class="icon-plus"></span></button>
+              <a href="contatos.html"><button class="add-cart"><span class="icon-cart-plus"></span></button></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal5">
+      <div class="modal" id="modal5">
         <div class="fechar" onclick="fechar5()">X</div>
         <h1>FREIO DE DISCO</h1>
         <p>O disco de freio é uma peça de formato circular e achatado, que fica presa ao cubo de roda e acompanha seu
@@ -209,13 +214,13 @@
               <input type="hidden" value="169,98" />
             </div>
             <div class="btn-buy">
-              <!--ADD CAR-->
               <button onclick="acao6()" class="add-cart cart6"><span class="icon-plus"></span></button>
+              <a href="contatos.html"><button class="add-cart"><span class="icon-cart-plus"></span></button></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal6">
+      <div class="modal" id="modal6">
         <div class="fechar" onclick="fechar6()">X</div>
         <h1>KIT DUAS VIAS</h1>
         <p>Kit duas vias é um conjunto de dois reprodutores de áudio que tocam em frequências distintas. Ele é composto
@@ -238,13 +243,13 @@
               <input type="hidden" value="5,98" />
             </div>
             <div class="btn-buy">
-              <!--ADD CAR-->
               <button onclick="acao7()" class="add-cart cart7"><span class="icon-plus"></span></button>
+              <a href="contatos.html"><button class="add-cart"><span class="icon-cart-plus"></span></button></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal7">
+      <div class="modal" id="modal7">
         <div class="fechar" onclick="fechar7()">X</div>
         <h1>LITTLE TREES</h1>
         <p>Little Trees é uma marca precursora em aromatizantes. O conceito do Little Trees aromas foi desenvolvido há
@@ -267,13 +272,13 @@
               <input type="hidden" value="363,63" />
             </div>
             <div class="btn-buy">
-              <!--ADD CAR-->
               <button onclick="acao8()" class="add-cart cart8"><span class="icon-plus"></span></button>
+              <a href="contatos.html"><button class="add-cart"><span class="icon-cart-plus"></span></button></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal8">
+      <div class="modal" id="modal8">
         <div class="fechar" onclick="fechar8()">X</div>
         <h1>PNEU PADRÃO AUTOMOTIVO</h1>
         <p>As informações sempre indicam as medidas de aro, largura e tamanho da parede do pneu, popularmente
@@ -297,13 +302,13 @@
               <input type="hidden" value="78,98" />
             </div>
             <div class="btn-buy">
-              <!--ADD CAR-->
               <button onclick="acao9()" class="add-cart cart9"><span class="icon-plus"></span></button>
+              <a href="contatos.html"><button class="add-cart"><span class="icon-cart-plus"></span></button></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal9">
+      <div class="modal" id="modal9">
         <div class="fechar" onclick="fechar9()">X</div>
         <h1>VELA</h1>
         <p>O seu papel é simples, mas muito importante. É ela quem fornece a centelha, também chamada de faísca

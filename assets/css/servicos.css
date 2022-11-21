@@ -13,24 +13,7 @@
     --font-roboto: 'Roboto', sans-serif;
 }
 
-.modal1,
-.modal2,
-.modal3,
-.modal4,
-.modal5,
-.modal6,
-.modal7,
-.modal8,
-.modal9,
-.modal10,
-.modal11,
-.modal12,
-.modal13,
-.modal14,
-.modal15,
-.modal16,
-.modal17,
-.modal18 {
+.modal {
     z-index: 2;
     width: 70vw;
     height: 70vh;
@@ -59,8 +42,7 @@
     }
 }
 
-button,
-.comprar {
+.add-cart, .add-info{
     color: white;
     background-color: #F21616;
     border: none;
@@ -69,11 +51,18 @@ button,
     width: 40px;
     height: 40px;
     margin: 5px;
+    padding-top: 7px;
 }
 
-button:hover {
+.add-cart:hover , .add-info:hover{
     color: black;
     background-color: white;
+}
+
+.btn-buy{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .area-produtos .display-produtos .content {
