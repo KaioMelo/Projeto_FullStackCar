@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
-:root{
+:root {
   --cor01: #F21628;
   --cor02: #F2949C;
   --cor03: #F21616;
@@ -10,17 +10,17 @@
   --cor05: #0D0D0D;
 
   --font-padrao: Arial, sans-serif;
-  --font-roboto: 'Roboto' , sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
 
-body{
+body {
   position: relative;
   font-family: var(--font-padrao);
   font-size: 1.1em;
@@ -28,63 +28,70 @@ body{
 
 /*-------- Estilos Base ------- */
 
-img{
+img {
   display: block;
   width: 100%;
   max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-roboto);
 }
 
-.container{
+.container {
   width: 100%;
   margin: auto;
 }
 
-.container-flex{
+.container-flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-.column{
+.column {
   width: 100%;
 }
 
 /*-------- Estilos header ------- */
 
-header{
+header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   background-image: linear-gradient(to top, var(--cor05), grey);
 }
 
-header .itens-link a{
+header .itens-link a {
   color: #fff;
 }
 
-.logo img{
+.logo img {
   width: 80px;
 }
 
-.header-pesquisa{
+.header-pesquisa {
   display: flex;
   align-items: center;
 }
 
-.itens-container{
+.itens-container {
   display: flex;
   align-items: center;
   list-style: none;
 }
-.itens-container li{
+
+.itens-container li {
   display: none;
 }
-.itens{
+
+.itens {
   display: flex;
   margin: 5px;
   margin-left: 10px;
@@ -92,16 +99,29 @@ header .itens-link a{
   color: white;
 }
 
-.itens-link{
+.itens-link {
   padding-right: 5px;
   margin: 5px;
 }
 
-.itens a{
+.itens a {
   color: var(--cor03);
 }
 
-.icon-torso{ /*icone usuario*/
+.cart-icon {
+  display: flex;
+  margin-right: 10px;
+  background-color: #ef9a9a;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.cart-icon span{
+  align-items: center;
+}
+
+.icon-torso {
+  /*icone usuario*/
   display: block;
   width: 40px;
   height: 40px;
@@ -112,7 +132,8 @@ header .itens-link a{
   cursor: pointer;
 }
 
-.icon-shopping-cart{ /*icone carrinho de compras*/
+.icon-shopping-cart {
+  /*icone carrinho de compras*/
   display: block;
   width: 40px;
   height: 40px;
@@ -125,7 +146,7 @@ header .itens-link a{
 
 /*-------- Estilos do menu ------- */
 
-nav{
+nav {
   width: 100%;
   position: relative;
   z-index: 2000;
@@ -133,11 +154,11 @@ nav{
   background: var(--cor04);
 }
 
-nav .menu-link a{
+nav .menu-link a {
   color: var(--cor03);
 }
 
-.menu{
+.menu {
   position: absolute;
   top: 60px;
   left: 0;
@@ -152,25 +173,25 @@ nav .menu-link a{
   transition: height .3s linear;
 }
 
-.menu-link{
+.menu-link {
   display: block;
   padding: 15px;
   text-decoration: none;
 }
 
-.menu-link:hover{
+.menu-link:hover {
   background: var(--cor05);
 }
 
-.menu-link-select{
+.menu-link-select {
   background: var(--cor05);
 }
 
-.mostrar{
+.mostrar {
   height: 256px;
 }
 
-.icon-bars{
+.icon-bars {
   display: block;
   border: 1px solid #0D0D0D;
   border-radius: 3px;
@@ -184,7 +205,7 @@ nav .menu-link a{
 
 /*-------- Estilos do main ------- */
 
-main{
+main {
   margin: 0 auto;
   width: 100%;
   height: 100%;
@@ -192,70 +213,80 @@ main{
 
 /*-------- Estilos do footer ------- */
 
-footer{
+footer {
   /* bottom: 0;
   position: fixed; */
-  width: 100%; 
+  width: 100%;
   background-color: #0D0D0D;
   color: white;
   text-align: center;
   padding: 5px;
 }
 
-footer .rodape-itens a{
+footer .rodape-itens a {
   color: white;
 }
 
-.rodape-itens{
+.rodape-itens {
   margin-top: 5px;
 }
 
-.rodape-icons{
+.rodape-icons {
   font-size: 1.5em;
   margin: 5px;
 }
 
 /*-------- Estilos responsivos ------- */
 
-@media screen and (min-width: 480px){
-  .column--33{
+@media screen and (min-width: 480px) {
+  .column--33 {
     width: 32%;
   }
-  .logo img{
+
+  .logo img {
     width: 120px;
   }
 }
 
-@media screen and (min-width: 1024px){
-  .container{
+@media screen and (min-width: 1024px) {
+  .container {
     width: 100%;
   }
-  .logo img{
+
+  .logo img {
     width: 200px;
   }
-  .itens-container{ /*Configuração de icones e links do cabeçalho*/
+
+  .itens-container {
+    /*Configuração de icones e links do cabeçalho*/
     display: flex;
     align-items: center;
     list-style: none;
     overflow: hidden;
   }
-  .itens-container li{
+
+  .itens-container li {
     display: block;
   }
-  .itens{
+
+  .itens {
     display: flex;
   }
-  .itens-link{
+
+  .itens-link {
     padding-right: 5px;
     margin: 5px;
   }
-  .main-nav{
+
+  .main-nav {
     padding: 0;
   }
-  .icon-bars{
+
+  .icon-bars {
     display: none;
   }
-  .menu{
+
+  .menu {
     position: static;
     display: flex;
     margin: auto;
@@ -263,7 +294,8 @@ footer .rodape-itens a{
     width: auto;
     background: var(--cor04);
   }
-  .menu-link{
+
+  .menu-link {
     padding: 20px;
   }
 }
