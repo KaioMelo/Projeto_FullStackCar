@@ -10,13 +10,13 @@ A ideia do projeto em grupo "Ajude um microempreendedor!" foi criar um site de n
 Nossa equipe é formada por 5 integrantes e cada um exercendo uma função no projeto:
 
 <ul>
-  <li><strong>Co-facilitadora</strong></li>
+  <li><strong>Co-facilitadora</strong> Eliseu Machado</li>
   <li><strong>Gestora
-de Conhecimento</strong> Kaio Melo dos Santos</li>
+de Conhecimento</strong> Kaio Melo</li>
   <li><strong>Gestora de
-Gente e Engajamento</strong></li>
-  <li><strong>Colaboradora I</strong></li>
-  <li><strong>Colaboradora II</strong></li>
+Gente e Engajamento</strong> João Victor Teodoro</li>
+  <li><strong>Colaboradora I</strong> Jorge Menezes</li>
+  <li><strong>Colaboradora II</strong> Gabriel Quaresma</li>
 </ul>
 
 ## ⚙ Tecnologias
