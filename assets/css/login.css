@@ -1,128 +1,134 @@
 :root {
-    --cor01: #F21628;
-    --cor02: #F2949C;
-    --cor03: #F21616;
-    --cor04: #D9D9D9;
-    --cor05: #0D0D0D;
-  
-    --font-padrao: Arial, sans-serif;
-    --font-roboto: 'Roboto', sans-serif;
-  }
-  
-  
+  --cor01: #F21628;
+  --cor02: #F2949C;
+  --cor03: #F21616;
+  --cor04: #D9D9D9;
+  --cor05: #0D0D0D;
+
+  --font-padrao: Arial, sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+}
+
+
 /*Adicionando estilo dentro do body*/
-body{
-    background-color: #181f27;
-    font-family: Arial;
-    overflow: auto;
+body {
+  background-color: #181f27;
+  font-family: Arial;
+  overflow: auto;
 }
 
 /*Adicionando estilização na section*/
-.area-login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    height: 100%;
-}
-h1{
-    text-align: center;
-    color:white
+.area-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  height: 100%;
 }
 
-  /*Estilizando a class login*/ 
-.login{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: #181920;
-    border-radius: 10px;
-    width: 355px;
-    height: 320px;
-    padding: 35px;
-    margin-top: 30px;
-    margin-block-end: 30px;
+h1 {
+  text-align: center;
+  color: white
+}
+
+/*Estilizando a class login*/
+.login {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #181920;
+  border-radius: 10px;
+  width: 355px;
+  height: 320px;
+  padding: 35px;
+  margin-top: 60px;
+  margin-block-end: 30px;
 }
 
 /*Estilizando a tag form dentro da class login*/
-.login form{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
+.login form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 }
 
 /*Estilizando o botão dentro da class login*/
-.login input{
-    margin-top: 10px;
-    background-color: white;
-    padding-left: 10px;
-    border: none;
-    height: 45px;
-    outline: none;
-    border-radius: 10px;
+.login input {
+  margin-top: 10px;
+  background-color: white;
+  padding-left: 10px;
+  border: none;
+  height: 45px;
+  outline: none;
+  border-radius: 10px;
 }
 
 /*Estilizando a imagem da logo dentro da class login*/
-.login img{
-    width: 65px;
-    height: auto;
+.login img {
+  width: 65px;
+  height: auto;
 }
 
-.input::placeholder{
-    color: black;
-    font-size: 14px;
+.input::placeholder {
+  color: black;
+  font-size: 14px;
 }
+
 /*Estilizando o botão*/
 form [type="submit"] {
-    padding: 1rem;
-    font-size: 1rem;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    margin-top: 1rem;
-    background-color: var(--cor02);
-    color: var(--cor05);
-    cursor: pointer;
-    transition: .3s;
-  }
-  
-  /*Estilizando o botão*/
-  form [type="submit"]:hover {
-    background-color: var(--cor01);
-  }
-  p{
-    color:white;
-    text-decoration: none;
-    margin-left: 10px;
+  padding: 1rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  background-color: var(--cor02);
+  color: var(--cor05);
+  cursor: pointer;
+  transition: .3s;
+}
+
+/*Estilizando o botão*/
+form [type="submit"]:hover {
+  background-color: var(--cor01);
+}
+
+p {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+footer{
+  margin-top: 132px;
+}
+
+/*Adicionando responsividade*/
+@media screen and (max-width: 375px) {
+  .area-login {
+    width: 100%;
+    height: 100%;
   }
 
+}
 
-  /*Adicionando responsividade*/
-  @media screen and (max-width: 375px) {
-    .area-login {
-      width: 100%;
-      height: 100%;
-    }
-  
-  }
-  
-  /*Adicionando responsividade*/
+/*Adicionando responsividade*/
 @media screen and (max-width: 325px) {
-    form {
-      width: 100%;
-      height: 100%;
-      padding: 20px;
-    }
-  
+  form {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
   }
-  
-  /*Adicionando responsividade*/
+
+}
+
+/*Adicionando responsividade*/
 @media (max-width: 1180px) {
-    form {
-      gap: 5px;
-      display: flex;
-      justify-content:center;
-      align-items: center;
-    }
+  form {
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+}

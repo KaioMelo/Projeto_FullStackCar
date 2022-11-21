@@ -185,7 +185,7 @@ function acao11() {
 
 function fechar11() {
 
-    let modal = document.querySelector('#modal12')
+    let modal = document.querySelector('#modal11')
 
 
     modal.style.display = 'none';
@@ -293,7 +293,7 @@ function acao17() {
 
 function fechar17() {
 
-    let modal = document.querySelector('#modal1')
+    let modal = document.querySelector('#modal17')
 
 
     modal.style.display = 'none';
