@@ -7,3 +7,9 @@ btnMenu.addEventListener('click', function(){
   'use strict';
   menu.classList.toggle('mostrar');
 })
+
+// Alerta Carrinho
+
+function cartIcon(){
+  alert('Carrinho de compra em manutenção!!')
+}

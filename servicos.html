@@ -23,11 +23,12 @@
         <a href="login.html"><span class="icon-torso"></span></a>
         <li class="itens-link"><a href="login.html">Entre ou Cadastre-se</a></li>
       </div>
-      <div class="itens">
-        <a href="carrinho.html">
+      <div class="itens cart-icon"  onclick="cartIcon()">
+        <span>0</span>
+        <a href="">
           <span class="icon-shopping-cart"></span>
         </a>
-        <li class="itens-link"><a href="">Meu carrinho</a></li>
+        <li class="itens-link"><a>Meu carrinho</a></li>
       </div>
     </div>
   </header>
@@ -48,159 +49,268 @@
       <div class=" main-flex">
         <div class="display-produtos column column--33" id="item2">
           <div class="imagem-produtos">
-            <img src="./assets/img/produto/caixa-de-ferramentas.png" />
+            <img src="./assets/img/produto/cabo-de-vela.png" />
           </div>
-          <div class="nome-produtos">
-            <h3>CAIXA DE FERRAMENTA</h3>
-          </div>
-          <div class="preco-produtos">
-            <h3>R$134,99</h3>
-            <input type="hidden" value="63,98" />
-          </div>
-          <div class="btn-adicionar">
-            <button onclick="meuCarrinho()" class="add-cart cart1">ADICIONAR AO CARRINHO</button>
+          <div class="content">
+            <div class="nome-produtos">
+              <h1>KIT CABO E VELA</h1>
+            </div>
+            <div class="preco-produtos">
+              <h1>R$63,98</h1>
+              <input type="hidden" value="63,98" />
+            </div>
+            <div class="btn-buy">
+              <button onclick="acao1()" class="add-cart cart1"><span class="icon-plus"></span></button>
+            </div>
           </div>
         </div>
       </div>
-      <div class=" main-flex">
+      <div class="modal1">
+        <div class="fechar" onclick="fechar1()">X</div>
+        <h1>Cabo de Vela, Vela de Ignição e Kit Cabo de Vela</h1>
+        <p>Seu veículo está engasgando durante a partida, ou está percebendo que o consumo de combustível está muito
+          alto,
+          e você gostaria de se prevenir e adquirir novas Velas de Ignição e Cabos de Vela? Então está no lugar certo!
+          Aqui na Hipervarejo você encontrará um catálogo com as Melhores Marcas de Kit Cabo de Vela e Velas de
+          Ignição,
+          para os mais diversos veículos, tudo de excelente qualidade, além de garantia, preço justo e o melhor,
+          entrega
+          rápida e pagamento em até 10x Sem Juros!</p>
+        <a href="contatos.html" class="comprar">COMPRAR</a>
+      </div>
+      <div class="main-flex">
         <div class="display-produtos column column--33" id="item5">
           <div class="imagem-produtos">
-            <img src="./assets/img/produto/correia-dentada.png" />
+            <img src="./assets/img/produto/camera-de-re.png" />
           </div>
-          <div class="nome-produtos">
-            <h3>CORREIA DENTADA</h3>
-          </div>
-          <div class="preco-produtos">
-            <h3>R$134,99</h3>
-            <input type="hidden" value="63,98" />
-          </div>
-          <div class="btn-adicionar">
-            <button onclick="meuCarrinho()" class="add-cart cart1">ADICIONAR AO CARRINHO</button>
+          <div class="content">
+            <div class="nome-produtos">
+              <h1>CÂMERA DE RÉ</h1>
+            </div>
+            <div class="preco-produtos">
+              <h1>R$159,98</h1>
+              <input type="hidden" value="159,98" />
+            </div>
+            <div class="btn-buy">
+              <button onclick="acao2()" class="add-cart cart2"><span class="icon-plus"></span></button>
+            </div>
           </div>
         </div>
       </div>
-      <div class=" main-flex">
-        <div class="display-produtos column column--33" id="item7">
-          <div class="imagem-produtos">
-            <img src="./assets/img/produto/filtro-de-óleo.png" />
-          </div>
+      <div class="modal2">
+        <div class="fechar" onclick="fechar2()">X</div>
+        <h1>CÂMERA DE RÉ</h1>
+        <p>O que é a câmera de ré? A câmera de ré é um sistema de estacionamento no qual é instalada uma câmera na
+          parte
+          de trás do veículo. Assim, o condutor poderá ver, por meio de um pequeno painel, o exato local onde ele
+          pretende
+          parar o seu automóvel.</p>
+        <a href="contatos.html" class="comprar">COMPRAR</a>
+      </div>
+      <div class="display-produtos column column--33" id="item7">
+        <div class="imagem-produtos">
+          <img src="./assets/img/produto/central-multi.png" />
+        </div>
+        <div class="content">
           <div class="nome-produtos">
-            <h3>FILTRO DE ÓLEO</h3>
+            <h1>CENTRAL MULTIMIDIA</h1>
           </div>
           <div class="preco-produtos">
-            <h3>R$134,99</h3>
-            <input type="hidden" value="63,98" />
+            <h1>R$355,75</h1>
+            <input type="hidden" value="355,75" />
           </div>
-          <div class="btn-adicionar">
-            <button onclick="meuCarrinho()" class="add-cart cart1">ADICIONAR AO CARRINHO</button>
+          <div class="btn-buy">
+            <button onclick="acao3()" class="add-cart cart3"><span class="icon-plus"></span></button>
           </div>
         </div>
+      </div>
+      <div class="modal3">
+        <div class="fechar" onclick="fechar3()">X</div>
+        <h1>CENTRAL MULTIMIDIA</h1>
+        <p>O que faz uma central multimídia?
+          A central multimídia significa a junção de diversos meios dentro de um só equipamento, ou seja, a
+          convergência
+          de diferentes mídias em um único lugar. Geralmente nesse aparelho estão presentes itens como: Bluetooth, TV
+          e
+          DVD, sensor de estacionamento e câmera-ré, dentre outros recursos</p>
+        <a href="contatos.html" class="comprar">COMPRAR</a>
+      </div>
       </div>
     </section>
     <section class="area-produtos">
       <div class=" main-flex">
         <div class="display-produtos column column--33" id="item9">
           <div class="imagem-produtos">
-            <img src="./assets/img/produto/junta-de-cabeçote.png" />
+            <img src="./assets/img/produto/filtro-de-ar.png" />
           </div>
-          <div class="nome-produtos">
-            <h3>JUNTA DE CABEÇOTE</h3>
-          </div>
-          <div class="preco-produtos">
-            <h3>R$134,99</h3>
-            <input type="hidden" value="63,98" />
-          </div>
-          <div class="btn-adicionar">
-            <button onclick="meuCarrinho()" class="add-cart cart1">ADICIONAR AO CARRINHO</button>
+          <div class="content">
+            <div class="nome-produtos">
+              <h1>FILTRO DE AR AUTOMOTIVO</h1>
+            </div>
+            <div class="preco-produtos">
+              <h1>R$19,95</h1>
+              <input type="hidden" value="19,95" />
+            </div>
+            <div class="btn-buy">
+              <!--ADD CAR-->
+              <button onclick="acao4()" class="add-cart cart4"><span class="icon-plus"></span></button>
+            </div>
           </div>
         </div>
       </div>
-      <div class=" main-flex">
-        <div class="display-produtos column column--33" id="item11">
-          <div class="imagem-produtos">
-            <img src="./assets/img/produto/kit-embragem.png" />
-          </div>
-          <div class="nome-produtos">
-            <h3>KIT EMBREAGEM</h3>
-          </div>
-          <div class="preco-produtos">
-            <h3>R$134,99</h3>
-            <input type="hidden" value="63,98" />
-          </div>
-          <div class="btn-adicionar">
-            <button onclick="meuCarrinho()" class="add-cart cart1">ADICIONAR AO CARRINHO</button>
-          </div>
-        </div>
+      <div class="modal4">
+        <div class="fechar" onclick="fechar4()">X</div>
+        <h1>FILTRO DE AR AUTOMOTIVO</h1>
+        <p>A principal função dos filtros automotivos é resguardar o motor do veículo. No entanto, como existem diversos
+          tipos de filtros integrados ao sistema, sua funcionalidade pode ser alterada de acordo com a posição que estes
+          componentes ocupam.</p>
+        <a href="contatos.html" class="comprar">COMPRAR</a>
       </div>
       <div class=" main-flex">
         <div class="display-produtos column column--33" id="item12">
           <div class="imagem-produtos">
-            <img src="./assets/img/produto/lâmpada-xenon.png" />
+            <img src="./assets/img/produto/freio-de-disco.png" />
           </div>
-          <div class="nome-produtos">
-            <h3>LÂMPADA XENOM</h3>
-          </div>
-          <div class="preco-produtos">
-            <h3>R$134,99</h3>
-            <input type="hidden" value="63,98" />
-          </div>
-          <div class="btn-adicionar">
-            <button onclick="meuCarrinho()" class="add-cart cart1">ADICIONAR AO CARRINHO</button>
+          <div class="content">
+            <div class="nome-produtos">
+              <h1>FREIO DE DISCO</h1>
+            </div>
+            <div class="preco-produtos">
+              <h1>R$75,98</h1>
+              <input type="hidden" value="75,98" />
+            </div>
+            <div class="btn-buy">
+              <!--ADD CAR-->
+              <button onclick="acao5()" class="add-cart cart5"><span class="icon-plus"></span></button>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="modal5">
+        <div class="fechar" onclick="fechar5()">X</div>
+        <h1>FREIO DE DISCO</h1>
+        <p>O disco de freio é uma peça de formato circular e achatado, que fica presa ao cubo de roda e acompanha seu
+          movimento. Ele é responsável por promover a desaceleração e a parada do veículo por meio do atrito das
+          pastilhas
+          em sua superfície.</p>
+        <a href="contatos.html" class="comprar">COMPRAR</a>
+      </div>
+      <div class=" main-flex">
+        <div class="display-produtos column column--33" id="item12">
+          <div class="imagem-produtos">
+            <img src="./assets/img/produto/kit-duas-vias.png" />
+          </div>
+          <div class="content">
+            <div class="nome-produtos">
+              <h1>KIT DUAS VIAS</h1>
+            </div>
+            <div class="preco-produtos">
+              <h1>R$169,98</h1>
+              <input type="hidden" value="169,98" />
+            </div>
+            <div class="btn-buy">
+              <!--ADD CAR-->
+              <button onclick="acao6()" class="add-cart cart6"><span class="icon-plus"></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal6">
+        <div class="fechar" onclick="fechar6()">X</div>
+        <h1>KIT DUAS VIAS</h1>
+        <p>Kit duas vias é um conjunto de dois reprodutores de áudio que tocam em frequências distintas. Ele é composto
+          por um alto-falante tweeter, que reproduz os agudos, e um Mid Bass, responsável pelos médios e graves.</p>
+        <a href="contatos.html" class="comprar">COMPRAR</a>
       </div>
     </section>
     <section class="area-produtos">
       <div class=" main-flex">
         <div class="display-produtos column column--33" id="item14">
           <div class="imagem-produtos">
-            <img src="./assets/img/produto/macaco-hidráulico.png" />
+            <img src="./assets/img/produto/little-trees.png" />
           </div>
-          <div class="nome-produtos">
-            <h3>MACACO HIDRAULICO</h3>
-          </div>
-          <div class="preco-produtos">
-            <h3>R$134,99</h3>
-            <input type="hidden" value="63,98" />
-          </div>
-          <div class="btn-adicionar">
-            <button onclick="meuCarrinho()" class="add-cart cart1">ADICIONAR AO CARRINHO</button>
+          <div class="content">
+            <div class="nome-produtos">
+              <h1>LITTLE TREES</h1>
+            </div>
+            <div class="preco-produtos">
+              <h1>R$5,98</h1>
+              <input type="hidden" value="5,98" />
+            </div>
+            <div class="btn-buy">
+              <!--ADD CAR-->
+              <button onclick="acao7()" class="add-cart cart7"><span class="icon-plus"></span></button>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="modal7">
+        <div class="fechar" onclick="fechar7()">X</div>
+        <h1>LITTLE TREES</h1>
+        <p>Little Trees é uma marca precursora em aromatizantes. O conceito do Little Trees aromas foi desenvolvido há
+          mais de 60 anos, com o intuito de solucionar o problema de forte odor em pequenos caminhões de carga. Hoje,
+          é
+          referência em aromatizantes de carros e pequenos ambientes, não só nos EUA como em todo o mundo.</p>
+        <a href="contatos.html" class="comprar">COMPRAR</a>
       </div>
       <div class=" main-flex">
         <div class="display-produtos column column--33" id="item15">
           <div class="imagem-produtos">
-            <img src="./assets/img/produto/pasta-de-polimento.png" />
+            <img src="./assets/img/produto/pneu.png" />
           </div>
-          <div class="nome-produtos">
-            <h3>PASTA DE POLIMENTO</h3>
-          </div>
-          <div class="preco-produtos">
-            <h3>R$134,99</h3>
-            <input type="hidden" value="63,98" />
-          </div>
-          <div class="btn-adicionar">
-            <button onclick="meuCarrinho()" class="add-cart cart1">ADICIONAR AO CARRINHO</button>
+          <div class="content">
+            <div class="nome-produtos">
+              <h1>PNEU PADRÃO AUTO</h1>
+            </div>
+            <div class="preco-produtos">
+              <h1>R$363,63</h1>
+              <input type="hidden" value="363,63" />
+            </div>
+            <div class="btn-buy">
+              <!--ADD CAR-->
+              <button onclick="acao8()" class="add-cart cart8"><span class="icon-plus"></span></button>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="modal8">
+        <div class="fechar" onclick="fechar8()">X</div>
+        <h1>PNEU PADRÃO AUTOMOTIVO</h1>
+        <p>As informações sempre indicam as medidas de aro, largura e tamanho da parede do pneu, popularmente
+          conhecida
+          como “perfil”. Portanto, um pneu com a marcação 175/70R15 teria as seguintes medidas: 175 mm de largura;
+          70 de
+          perfil – o que significa que a parede do pneu compõe 70% de sua largura total (ou seja, 122,5 mm)</p>
+        <a href="contatos.html" class="comprar">COMPRAR</a>
       </div>
       <div class=" main-flex">
         <div class="display-produtos column column--33" id="item17">
           <div class="imagem-produtos">
-            <img src="./assets/img/produto/shampoo-automotivo.png" />
+            <img src="./assets/img/produto/vela.png" />
           </div>
-          <div class="nome-produtos">
-            <h3>SHAMPOO AUTOMOTIVO</h3>
-          </div>
-          <div class="preco-produtos">
-            <h3>R$134,99</h3>
-            <input type="hidden" value="63,98" />
-          </div>
-          <div class="adicionar-">
-            <button onclick="meuCarrinho()" class="add-cart cart1">ADICIONAR AO CARRINHO</button>
+          <div class="content">
+            <div class="nome-produtos">
+              <h1>VELA</h1>
+            </div>
+            <div class="preco-produtos">
+              <h1>R$78,98</h1>
+              <input type="hidden" value="78,98" />
+            </div>
+            <div class="btn-buy">
+              <!--ADD CAR-->
+              <button onclick="acao9()" class="add-cart cart9"><span class="icon-plus"></span></button>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="modal9">
+        <div class="fechar" onclick="fechar9()">X</div>
+        <h1>VELA</h1>
+        <p>O seu papel é simples, mas muito importante. É ela quem fornece a centelha, também chamada de faísca
+          elétrica,
+          que é responsável por dar a partida no motor. Isso, é claro, em motores a combustão, não elétricos. Por essa
+          razão, problemas na ignição podem estar diretamente relacionados à vela.</p>
+        <a href="contatos.html" class="comprar">COMPRAR</a>
       </div>
     </section>
   </main>
