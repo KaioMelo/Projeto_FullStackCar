@@ -95,6 +95,12 @@ form [type="submit"] {
     background-color: var(--cor01);
   }
 
+  p{
+    color:white;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+
   /*Adicionando responsividade*/
   @media screen and (max-width: 375px) {
     .area-login {

@@ -18,6 +18,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .squad {
@@ -29,6 +30,7 @@
 
 
 .card{
+    margin-top: 10px;
     height: 400px;
     width: 300px;
     background-color: #D9D9D9;
